@@ -1,0 +1,19 @@
+doctype html
+head
+    title agregar productos 
+
+body
+    h3='Agregar productos'
+        form(action='/api/productos', method='POST')
+            p
+            | title: 
+            input(type='text', name='title', value='')
+            |          price: 
+            input(type='number', name='price', value='')
+            |          thumbnail: 
+            input(type='text', name='thumbnail', value='')
+            button enviar
+        br
+        
+        a(href="http://localhost:8080/api/productos")
+            button.btn.btn-success.mt-3.mb-5 productos agregados 
